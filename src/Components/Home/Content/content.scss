@@ -1,0 +1,97 @@
+@import "./../../../global.scss" ;
+
+
+.home__content{
+    padding: 1rem;
+    padding-top: 7rem;
+    width: 80%;
+    margin: auto;
+    &__search{
+        display: flex;
+        justify-content: space-between;
+        &__left{
+            .main{
+                font-size: large;
+                font-weight: bold;
+                margin-right: 1rem;
+            }
+            .numeric{
+                background-color : $color-main;
+                padding: 0.3rem 1rem;
+                color : $color-white ;
+            }
+            .upgrade{
+                margin-left: 1rem;
+                font-size: medium;
+                font-weight: 550;
+            }
+        }
+
+        &__right{
+            font-size: large;
+            font-weight: bold;
+            margin-top: 15px ;
+        }
+
+    }
+
+    &__search__input{
+        background-color: $color-background;
+        margin-top: 1.5rem;
+        display: flex;
+ 
+        &__icon{
+            flex : 0.05 ;
+            background-color: $color-background;
+            padding: 20px 2px 20px 20px;
+
+        }
+        &__query{
+            flex : 0.70 ;
+            input{
+                all:unset;
+                width: 100%;
+                background-color: $color-background;
+                padding: 20px 5px 20px 2px;
+                color : $color-text-dark
+            }
+        }
+        &__button{
+            flex : 0.25;
+                background-color: $color-background;
+                padding: 10px;
+                text-align: right;
+            button{
+                all:unset;
+                color : $color-white ;
+                padding: 10px;
+                background-color: $color-main;
+                text-align: center;
+                cursor: pointer;
+                border-radius: 5px;
+
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

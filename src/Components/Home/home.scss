@@ -1,0 +1,12 @@
+.home{
+    &__container{
+        display: flex;
+  
+        &__sidebar{
+            width : 21%;
+        }
+        &__content{
+            width: 79%;
+        }
+    }
+}
