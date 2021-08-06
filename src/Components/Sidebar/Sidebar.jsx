@@ -1,4 +1,5 @@
-import React, { useState } from 'react' ;
+
+import React from "react";
 import "./sidebar.scss" ; 
 const Sidebar = () => {
     const links = [
@@ -34,7 +35,7 @@ const Sidebar = () => {
         }
 
     ] ;
-    const [settingsActive, setSettingsActive] = useState(true) ;
+
     return(
         <>
         <div className="sidebar">
@@ -42,7 +43,7 @@ const Sidebar = () => {
             {
                 links.map((obj, index)=>{
                     return(
-                        <>
+                        <React.Fragment key={index}>
                         <div className={obj.active ? "sidebar__links__each active": "sidebar__links__each"} key={index}>
                             <div className="sidebar__links__each__icon">
                                 <i className={obj.icon}></i>
@@ -51,7 +52,7 @@ const Sidebar = () => {
                                 {obj.name}
                             </div>
                         </div>
-                        </>
+                        </React.Fragment>
                     )
                 })
             }

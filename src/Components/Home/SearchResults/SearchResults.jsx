@@ -35,7 +35,7 @@ const SearchResults = () => {
           </div>
           {data.map((obj, index) => {
             return (
-              <>
+              <React.Fragment key={index}>
                 <div className="search-results__table__data">
                   <div className="data">{obj.keyword}</div>
                   <div className="data"><i className="fas fa-search"></i></div>
@@ -44,7 +44,7 @@ const SearchResults = () => {
                   <div className="data">{obj.search_status}</div>
                   <div className="data"><span></span></div>
                 </div>
-              </>
+              </React.Fragment>
             );
           })}
 
